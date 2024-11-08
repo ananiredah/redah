@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Factorial Calculator</title>
+</head>
+<body>
+    <h2>Calculate 89!</h2>
+    <button onclick="calculateFactorial()">Calculate 89!</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+        function calculateFactorial() {
+            let num = 89;
+            let factorial = 1;
+
+            // Loop to calculate factorial
+            for (let i = 1; i <= num; i++) {
+                factorial *= i;
+            }
+
+            // Display the result
+            document.getElementById("result").textContent = "89! = " + factorial;
+        }
+    </script>
+</body>
+</html>
